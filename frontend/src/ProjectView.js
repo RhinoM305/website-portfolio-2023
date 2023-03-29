@@ -35,14 +35,14 @@ function ProjectView({ flexDirection }) {
             <a
               href="#"
               target="__blank"
-              className="inline-block text-white border-0 py-2 px-2 w-20 opacity-90 shadow-md focus:outline-none text-center transition-transform duration-250 ease-in-out transform scale-90 text-base hover:text-gray-200 hover:scale-110 active:relative active:top-2 active:shadow-none active:text-gray-300 active: outline-none bg-[black] 2xl:h-12 2xl:w-32 2xl:py-4"
+              className="inline-block text-white border-0 py-2 px-2 w-20 opacity-90 shadow-md focus:outline-none text-center transition-transform duration-250 ease-in-out transform scale-90 text-base hover:text-gray-200 hover:scale-110 active:relative active:top-2 active:shadow-none active:text-gray-300 active: outline-none bg-[black] 2xl:h-12 2xl:w-28 2xl:py-4"
             >
               <i className="fa fa-desktop 2xl:scale-[1.5]"></i>
             </a>
             <a
               href="#"
               target="__blank"
-              className="inline-block text-white border-0 py-2 px-2 w-20 opacity-90 shadow-md focus:outline-none text-center transition-transform duration-250 ease-in-out transform scale-90 text-base hover:text-gray-200 hover:scale-110 active:relative active:top-2 active:shadow-none active:text-gray-300 active: outline-none bg-[black] 2xl:h-12 2xl:w-32 2xl:py-4"
+              className="inline-block text-white border-0 py-2 px-2 w-20 opacity-90 shadow-md focus:outline-none text-center transition-transform duration-250 ease-in-out transform scale-90 text-base hover:text-gray-200 hover:scale-110 active:relative active:top-2 active:shadow-none active:text-gray-300 active: outline-none bg-[black] 2xl:h-12 2xl:w-28 2xl:py-4"
             >
               <i className="fa fa-github 2xl:scale-[1.5]"></i>
             </a>
