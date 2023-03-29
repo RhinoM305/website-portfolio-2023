@@ -17,7 +17,7 @@ function Layout() {
     });
   }, []);
   return (
-    <div className="overflow-hidden scrollbar-none overflow-x: hidden;">
+    <div className="overflow-hidden overflow-x: hidden;">
       <Navbar />
       <Landing />
       <main className="w-full">
