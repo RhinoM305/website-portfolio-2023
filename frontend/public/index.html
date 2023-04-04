@@ -58,6 +58,18 @@
       <script>
         AOS.init();
       </script>
+    <script>
+      let timeoutId = setTimeout(function() {
+        
+        if(document.readyState === "loading") {
+          window.loaction.reload();
+        }
+      },5000)
+
+      document.addEventListener("DOMContentLoaded", function() {
+        clearTimeout(timeoutId);
+      })
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
