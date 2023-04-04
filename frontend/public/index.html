@@ -56,18 +56,16 @@
   <body>
     <script>
       let timeoutId = setTimeout(function() {
-        
-        if(document.readyState === "loading") {
-          window.loaction.reload();
+        let scriptCompleted = false;
+
+        if(!scriptCompleted) {
+          window.location.reload();
         }
       },5000)
-
-      document.addEventListener("DOMContentLoaded", function() {
-        clearTimeout(timeoutId);
-      })
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js%22%3E"></script>
       <script>
+        scriptCompleted = true;
         AOS.init();
       </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
