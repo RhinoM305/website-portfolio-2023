@@ -1,17 +1,16 @@
 function Navbar() {
   return (
     <div
-      className="flex fixed z-10 w-full h-[4rem] bg-[black] backdrop-filter bg-opacity-20 backdrop-blur-lg items-center justify-between p-5 2xl:h-[6rem]"
+      className="flex fixed z-10 w-full h-[4rem] bg-[black] backdrop-filter bg-opacity-20 backdrop-blur-lg items-center justify-between invisible p-5 xxl:h-[6rem] sm:visible"
       data-aos="fade-down"
-      data-aos-offset="1500"
-      data-aos-delay="50"
+      data-aos-offset="1000"
     >
-      <h2 className="text-bold font-mono justify-self-start text-white text-4xl ml-4 2xl:text-6xl">
-        ryan.dev
+      <h2 className="text-bold font-Titan-One text-white text-4xl ml-4 xxl:text-6xl">
+        Ryan.dev
       </h2>
-      <div className="text-white text-2xl 2xl:text-4xl">
+      <div className="text-white text-xxl xxl:text-4xl">
         <button
-          className="ml-4 mr-4"
+          className="ml-4 mr-4 noSelect"
           onClick={() => {
             window.scrollTo(0, 600);
           }}
@@ -19,15 +18,15 @@ function Navbar() {
           About
         </button>
         <button
-          className="ml-4 mr-4"
+          className="ml-4 mr-4 noSelect"
           onClick={() => {
-            window.scrollTo(0, 1600);
+            window.scrollTo(0, 1750);
           }}
         >
           Skills
         </button>
         <button
-          className="ml-4 mr-4"
+          className="ml-4 mr-4 noSelect"
           onClick={() => {
             window.scrollTo(0, 2450);
           }}
@@ -35,7 +34,7 @@ function Navbar() {
           Portfolio
         </button>
         <button
-          className="ml-4 mr-4"
+          className="ml-4 mr-4 noSelect"
           onClick={() => {
             window.scrollTo(0, document.body.scrollHeight);
           }}

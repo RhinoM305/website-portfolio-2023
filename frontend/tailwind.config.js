@@ -24,6 +24,16 @@ module.exports = {
     fontFamily: {
       mono: ["monospace"],
       "helvetica-neue": ["Helvetica Neue", "sans-serif"],
+      "Titan-One": ["Titan One", "sans"],
+    },
+    screens: {
+      se: "375px",
+      xr: "414px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      xxl: "1400px",
     },
   },
   plugins: [],

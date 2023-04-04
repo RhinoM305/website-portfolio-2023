@@ -5,6 +5,7 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Aos from "aos";
 import Navbar from "./navbar/Navbar";
+import MobileNav from "./navbar/MobileNav";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 
@@ -18,13 +19,11 @@ function Layout() {
   }, []);
   return (
     <div className="overflow-hidden overflow-x: hidden;">
+      <MobileNav />
       <Navbar />
       <Landing />
       <main className="w-full">
-        <body
-          className="mt-12 w-full flex flex-col items-center bg-[black]"
-          id="skills"
-        >
+        <body className="mt-12 w-full flex flex-col items-center" id="skills">
           <About />
           <Skills />
           <Portfolio />

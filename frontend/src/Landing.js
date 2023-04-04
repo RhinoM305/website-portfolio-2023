@@ -17,10 +17,27 @@ function Landing() {
           onClick={() => {
             let arrow = document.querySelector(".bounce");
             arrow.classList.add("clicked");
-            window.scrollTo(0, 600);
+
+            if (window.innerWidth > 780) {
+              window.scrollTo(0, 600);
+            } else if (
+              window.innerWidth > 380 &&
+              /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent
+              )
+            ) {
+              window.scrollTo(0, 850);
+            } else if (
+              window.innerWidth > 300 &&
+              /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent
+              )
+            ) {
+              window.scrollTo(0, 660);
+            }
           }}
         >
-          <FaArrowDown className="w-12 h-12 mb-2 bounce text-white down-arrow 2xl:w-[4rem] 2xl:h-[4rem]" />
+          <FaArrowDown className="w-12 h-12 mb-2 bounce text-white down-arrow xxl:w-[4rem] xxl:h-[4rem]" />
         </button>
       </div>
     </div>

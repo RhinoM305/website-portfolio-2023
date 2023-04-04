@@ -1,12 +1,12 @@
-function ProjectView({ flexDirection }) {
+function ProjectView() {
   return (
-    <div className={`flex ${flexDirection} mt-14 mb-8`}>
+    <div className="flex mb-8 se:flex-col sm:flex-row">
       <div
         name="picture-side"
-        className="w-full"
-        // data-aos="fade-right"
-        // data-aos-anchor-placement="center-center"
-        // data-aos-offset="300"
+        className="w-full hidden sm:block"
+        data-aos="fade-right"
+        data-aos-anchor-placement="center-center"
+        data-aos-offset="300"
       >
         <img
           src={require("./images/Reservation-SS-.png")}
@@ -20,8 +20,8 @@ function ProjectView({ flexDirection }) {
         data-aos-anchor-placement="center-center"
         data-aos-offset="300"
       >
-        <h4 className="text-2xl mt-4 2xl:text-4xl">periodic tables</h4>
-        <p className="w-3/4 font-Helvetica-Neue text-lg mt-2 2xl:w-2/4 2xl:text-xl 2xl:text-center">
+        <h4 className="text-2xl mt-4 xxl:text-4xl">periodic tables</h4>
+        <p className="w-3/4 font-Helvetica-Neue text-lg mt-2 xxl:w-2/4 xxl:text-xl xxl:text-center">
           This is a website that allows users to manage reservations for
           specific dates. It includes features such as form validation, CORS
           website security, and the ability to create,delete,and update
@@ -35,16 +35,16 @@ function ProjectView({ flexDirection }) {
             <a
               href="#"
               target="__blank"
-              className="inline-block text-white border-0 py-2 px-2 w-20 opacity-90 shadow-md focus:outline-none text-center transition-transform duration-250 ease-in-out transform scale-90 text-base hover:text-gray-200 hover:scale-110 active:relative active:top-2 active:shadow-none active:text-gray-300 active: outline-none bg-[black] 2xl:h-12 2xl:w-28 2xl:py-4"
+              className="inline-block text-white border-0 py-2 px-2 w-20 opacity-90 shadow-md focus:outline-none text-center transition-transform duration-250 ease-in-out transform scale-90 text-base hover:text-gray-200 hover:scale-110 active:relative active:top-2 active:shadow-none active:text-gray-300 active: outline-none bg-[black] xxl:h-12 xxl:w-28 xxl:py-4"
             >
-              <i className="fa fa-desktop 2xl:scale-[1.5]"></i>
+              <i className="fa fa-desktop xxl:scale-[1.5]"></i>
             </a>
             <a
               href="#"
               target="__blank"
-              className="inline-block text-white border-0 py-2 px-2 w-20 opacity-90 shadow-md focus:outline-none text-center transition-transform duration-250 ease-in-out transform scale-90 text-base hover:text-gray-200 hover:scale-110 active:relative active:top-2 active:shadow-none active:text-gray-300 active: outline-none bg-[black] 2xl:h-12 2xl:w-28 2xl:py-4"
+              className="inline-block text-white border-0 py-2 px-2 w-20 opacity-90 shadow-md focus:outline-none text-center transition-transform duration-250 ease-in-out transform scale-90 text-base hover:text-gray-200 hover:scale-110 active:relative active:top-2 active:shadow-none active:text-gray-300 active: outline-none bg-[black] xxl:h-12 xxl:w-28 xxl:py-4"
             >
-              <i className="fa fa-github 2xl:scale-[1.5]"></i>
+              <i className="fa fa-github xxl:scale-[1.5]"></i>
             </a>
           </div>
           <div className="flex">
@@ -63,6 +63,9 @@ function ProjectView({ flexDirection }) {
           </div>
         </div>
       </div>
+      <p className="text-sm italic text-stone-700 mx-16 mt-6 sm:hidden">
+        Intrested in any projects? Github/Demo links under description!
+      </p>
     </div>
   );
 }
