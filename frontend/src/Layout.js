@@ -18,7 +18,7 @@ function Layout() {
     });
   }, []);
   return (
-    <div className="overflow-hidden overflow-x: hidden;">
+    <div className="overflow-hidden overflow-x: hidden;" id="mainDom">
       <MobileNav />
       <Navbar />
       <Landing />
