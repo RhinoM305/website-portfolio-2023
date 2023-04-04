@@ -12,7 +12,7 @@ function Navbar() {
         <button
           className="ml-4 mr-4 noSelect"
           onClick={() => {
-            window.scrollTo(0, 600);
+            window.scrollTo(0, 1000);
           }}
         >
           About
@@ -20,7 +20,7 @@ function Navbar() {
         <button
           className="ml-4 mr-4 noSelect"
           onClick={() => {
-            window.scrollTo(0, 1750);
+            window.scrollTo(0, 2050);
           }}
         >
           Skills
@@ -28,7 +28,7 @@ function Navbar() {
         <button
           className="ml-4 mr-4 noSelect"
           onClick={() => {
-            window.scrollTo(0, 2450);
+            window.scrollTo(0, 3000);
           }}
         >
           Portfolio

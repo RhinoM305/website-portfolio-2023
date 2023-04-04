@@ -19,7 +19,7 @@ function Landing() {
             arrow.classList.add("clicked");
 
             if (window.innerWidth > 780) {
-              window.scrollTo(0, 600);
+              window.scrollTo(0, 1000);
             } else if (
               window.innerWidth > 380 &&
               /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
