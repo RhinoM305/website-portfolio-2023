@@ -2,7 +2,7 @@ import "./Landing.css";
 
 const Typewriter = ({ text }) => {
   return (
-    <div className="sm:text-4sxl se:text-3xl">
+    <div className="sm:text-4sxl se:text-2xl">
       <h1 className="overflow-hidden font-mono font-bold text-white border-r-4 opacity-0 whitespace-nowrap border-r-white animate-typing1 xxl:text-7xl">
         Hello, world. I'm Ryan!
       </h1>
