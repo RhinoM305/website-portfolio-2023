@@ -5,12 +5,12 @@ module.exports = {
     extend: {
       animation: {
         typing1: "typing 3.5s steps(23) 2s forwards, blink 1.0s 6",
-        typing2: "typing 3.5s steps(24) 5.5s forwards, blink 1.0s infinite",
+        typing2: "typing 3.5s steps(25) 5.5s forwards, blink 1.0s infinite",
       },
       keyframes: {
         typing: {
           from: { width: "0ch", opacity: 1 },
-          to: { width: "24ch", opacity: 1, borderColor: "transparent" },
+          to: { width: "25ch", opacity: 1, borderColor: "transparent" },
         },
 
         blink: {
@@ -22,7 +22,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      mono: ["monospace"],
+      "mono": ["monospace"],
       "helvetica-neue": ["Helvetica Neue", "sans-serif"],
       "Titan-One": ["Titan One", "sans"],
     },

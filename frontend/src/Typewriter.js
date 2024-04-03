@@ -2,12 +2,12 @@ import "./Landing.css";
 
 const Typewriter = ({ text }) => {
   return (
-    <div className="sm:text-5xl se:text-2xl">
-      <h1 className="overflow-hidden whitespace-nowrap text-white font-mono font-bold border-r-4 border-r-white opacity-0 animate-typing1 xxl:text-7xl">
+    <div className="sm:text-4sxl se:text-3xl">
+      <h1 className="overflow-hidden font-mono font-bold text-white border-r-4 opacity-0 whitespace-nowrap border-r-white animate-typing1 xxl:text-7xl">
         Hello, world. I'm Ryan!
       </h1>
-      <h1 className="overflow-hidden whitespace-nowrap text-white font-mono font-bold border-r-4 border-r-white opacity-0 animate-typing2 xxl:text-7xl">
-        I'm a software engineer!
+      <h1 className="overflow-hidden font-mono font-bold text-white border-r-4 opacity-0 whitespace-nowrap border-r-white animate-typing2 xxl:text-7xl">
+        I'm a Full Stack &lt;<span className="text-cyan-300">Dev </span>/&gt;
       </h1>
     </div>
   );

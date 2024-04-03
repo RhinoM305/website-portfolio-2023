@@ -22,9 +22,20 @@
 }
 
 .noSelect:focus {
-  outline: none
+  outline: none;
 }
 
+.spanBlur {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+
+.marquee-item {
+  background-image: url("./images/prog-languages.png");
+  /* background-image: url("./images/languages-pattern-MEidL4vy.png"); */
+  animation: marqueeTop 35s linear infinite;
+}
 
 @keyframes bounce {
   0%,20%,50%,80%,100% {
@@ -36,5 +47,14 @@
   }
   60% {
     transform: translateY(-15px)
+  }
+}
+
+@keyframes marqueeTop{
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -957px;
   }
 }

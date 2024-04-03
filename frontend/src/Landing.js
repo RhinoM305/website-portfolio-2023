@@ -1,32 +1,32 @@
 import "./Landing.css";
 import Typewriter from "./Typewriter";
+import $ from "jquery";
 import { FaArrowDown } from "react-icons/fa";
 
 function Landing() {
-  // window.addEventListener("load", () => {
-  //   window.scrollTo(0, 0);
-  // });
   return (
-    <div className="h-screen bg-[black] flex justify-center items-center flex-col border-b-2 border-[black] shadow-lg shadow-gray-800">
-      <div className="w-13ch m-6 h-full flex items-end">
+    <div className="relative h-screen bg-[black] flex justify-center items-center flex-col overflow-hidden">
+      <span className="absolute w-full h-[1914px] marquee-item top-0 opacity-[27%]"></span>
+      <span className="absolute bottom-0 h-[60%] bg-black w-full spanBlur"></span>
+      <div className="flex items-end h-full m-6 w-13ch">
         <Typewriter />
       </div>
-      <div className="w-full h-full flex items-end justify-center ">
+      <div className="flex items-end justify-center w-full h-full ">
         <button
-          className=""
+          className="z-50"
           onClick={() => {
             let arrow = document.querySelector(".bounce");
             arrow.classList.add("clicked");
 
             if (window.innerWidth > 780) {
-              window.scrollTo(0, 1000);
+              window.scrollTo(0, 950);
             } else if (
-              window.innerWidth > 380 &&
+              window.innerWidth > 380 && 
               /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
                 navigator.userAgent
               )
             ) {
-              window.scrollTo(0, 850);
+              window.scrollTo(0, 900);
             } else if (
               window.innerWidth > 300 &&
               /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(

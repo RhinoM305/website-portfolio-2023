@@ -9,7 +9,7 @@ function About() {
     );
   };
   return (
-    <div id="about" className="bg-[white]">
+    <div id="about" className="bg-black">
       <div className="flex flex-col items-center se:mb-24 sm:mt-20">
         <h2
           data-aos="fade-down"
@@ -17,13 +17,13 @@ function About() {
           data-aos-delay="500"
           data-aos-duration="1000"
           data-aos-offset="450"
-          className="mt-2 text-5xl font-bold font-sans font-helvetica-neue xxl:text-7xl"
+          className="mt-2 font-sans text-5xl font-bold font-helvetica-neue xxl:text-7xl"
         >
           About Me
         </h2>
         <div className="flex mt-8 mb-8 se:flex-col-reverse sm:flex-row">
           <div
-            className="w-full flex justify-center"
+            className="flex justify-center w-full"
             data-aos="fade-up"
             data-aos-anchor-placement="center-center"
             data-aos-offset="300"
@@ -34,7 +34,7 @@ function About() {
               onClick={handleClick}
             />
           </div>
-          <div className="w-full flex content-center font-sans font-helvetica-neue">
+          <div className="flex content-center w-full font-sans font-helvetica-neue">
             <p
               className="self-center m-6 xxl:text-4xl se:text-lg sm:text-2xl"
               data-aos="fade-left"

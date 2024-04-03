@@ -23,8 +23,8 @@ function Layout() {
       <Navbar />
       <Landing />
       <main className="w-full">
-        <body className="mt-12 w-full flex flex-col items-center" id="skills">
-          <About />
+        <body className="flex flex-col items-center w-full" id="skills">
+          {/* <About /> */}
           <Skills />
           <Portfolio />
           <Contact />

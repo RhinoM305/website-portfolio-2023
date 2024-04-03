@@ -38,14 +38,14 @@ function MobileNav() {
         </div>
       </div>
       <div className="flex justify-center items-center fixed z-10 w-full h-[4rem] backdrop-filter backdrop-blur-sm visible sm:invisible ">
-        <h3 className="bg-black bg-opacity-60 rounded-lg pl-3 pr-3 text-white text-3xl font-Titan-One">
+        <h3 className="pl-3 pr-3 text-3xl text-white bg-black rounded-lg bg-opacity-60 font-helvetica-neue">
           Ryan.dev
         </h3>
       </div>
       <div className="mobilenav--wrap">
         <div className="mobilenav backdrop-filter backdrop-blur-sm bg-black bg-opacity-[.97]">
           <ul>
-            <li className="ml-6">
+            {/* <li className="ml-6">
               <button
                 className="text-white font-helvetica-neue noSelect"
                 onClick={() => {
@@ -78,7 +78,7 @@ function MobileNav() {
               >
                 About
               </button>
-            </li>
+            </li> */}
             <li className="ml-6">
               <button
                 className="text-white font-helvetica-neue noSelect"
@@ -98,7 +98,7 @@ function MobileNav() {
                       navigator.userAgent
                     )
                   ) {
-                    window.scrollTo(0, 1820);
+                    window.scrollTo(0, 900);
                   } else if (
                     window.innerWidth > 300 &&
                     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -131,7 +131,7 @@ function MobileNav() {
                       navigator.userAgent
                     )
                   ) {
-                    window.scrollTo(0, 3000);
+                    window.scrollTo(0, 1850);
                   } else if (
                     window.innerWidth > 300 &&
                     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -165,7 +165,7 @@ function MobileNav() {
                       navigator.userAgent
                     )
                   ) {
-                    window.scrollTo(0, 3800);
+                    window.scrollTo(0, 3450);
                   } else if (
                     window.innerWidth > 300 &&
                     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
