@@ -22,14 +22,14 @@ function Layout() {
       <MobileNav />
       <Navbar />
       <Landing />
-      <main className="w-full">
+      <div className="w-full">
         <body className="flex flex-col items-center w-full" id="skills">
           {/* <About /> */}
           <Skills />
           <Portfolio />
           <Contact />
         </body>
-      </main>
+      </div>
     </div>
   );
 }
