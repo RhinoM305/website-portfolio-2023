@@ -2,7 +2,7 @@ function Skills() {
   return (
     <div className="w-full flex flex-col bg-[black] pt-28 pb-24">
       <h2
-        className="w-full mt-10 text-6xl font-bold text-center text-white font-Helvetica Neue hide xxl:text-7xl xxl:mb-2"
+        className="w-full mt-10 text-6xl font-bold text-center text-white font-Oswald hide xxl:text-7xl xxl:mb-2"
         data-aos="fade-down"
         data-aos-anchor-placement="center-center"
         data-aos-delay="500"
@@ -13,7 +13,7 @@ function Skills() {
         Skills
       </h2>
       <p
-        className="pl-2 md:pl-[75px] mt-6 text-5xl font-thin text-white font-Helvetica Neue xxl:text-6xl "
+        className="pl-2 md:pl-[75px] mt-6 text-5xl font-thin text-white font-Oswald Neue xxl:text-6xl "
         data-aos="fade-right"
         data-aos-anchor-placement="center-center"
         data-aos-delay="500"
@@ -22,7 +22,7 @@ function Skills() {
       >
         Frontend
       </p>
-      <div className="flex flex-wrap w-full pl-2 md:pl-[75px] mt-8 text-lg text-white md:text-2xl">
+      <div className="flex flex-wrap w-full pl-2 md:pl-[75px] mt-8 text-lg text-white md:text-2xl font-Roboto">
         <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"          
                     data-aos="fade-right"
                     data-aos-anchor-placement="center-center"
@@ -75,7 +75,7 @@ function Skills() {
 
       </div>
       <h3
-        className="pl-2 md:pl-[75px] text-5xl font-thin text-white font-Helvetica-Neue mt-14 xxl:text-6xl"
+        className="pl-2 md:pl-[75px] text-5xl font-thin text-white font-Oswald mt-14 xxl:text-6xl"
         data-aos="fade-right"
         data-aos-anchor-placement="center-center"
         data-aos-delay="500"
@@ -84,7 +84,7 @@ function Skills() {
       >
         Backend
       </h3>
-      <div className="flex flex-wrap w-full pl-2 md:pl-[75px] mt-8 text-lg text-white md:text-2xl">
+      <div className="flex flex-wrap w-full pl-2 md:pl-[75px] mt-8 text-lg text-white md:text-2xl font-Roboto">
       <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
                   data-aos="fade-right"
                   data-aos-anchor-placement="center-center"
@@ -158,7 +158,7 @@ function Skills() {
           PostgresSQL</p>
       </div>
       <h3
-        className="pl-2 md:pl-[75px] text-5xl font-thin text-white font-helvetica-Neue mt-14 xxl:text-6xl"
+        className="pl-2 md:pl-[75px] text-5xl font-thin text-white font-Oswald mt-14 xxl:text-6xl"
         data-aos="fade-right"
         data-aos-anchor-placement="center-center"
         data-aos-delay="500"
@@ -171,7 +171,7 @@ function Skills() {
         name="tool-icons"
         className="w-full pl-2 md:pl-[75px]"
       >
-        <div className="flex flex-wrap w-full mt-8 text-lg text-white md:text-2xl">
+        <div className="flex flex-wrap w-full mt-8 text-lg text-white md:text-2xl font-Roboto">
         <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
                     data-aos="fade-right"
                     data-aos-anchor-placement="center-center"

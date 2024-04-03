@@ -25,6 +25,8 @@ module.exports = {
       "mono": ["monospace"],
       "helvetica-neue": ["Helvetica Neue", "sans-serif"],
       "Titan-One": ["Titan One", "sans"],
+      "Oswald": ["Oswald", "sans"],
+      "Roboto": ["Roboto", "sans"]
     },
     screens: {
       se: "375px",

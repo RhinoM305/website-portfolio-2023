@@ -21,8 +21,8 @@ function ProjectView() {
         data-aos-anchor-placement="center-center"
         data-aos-offset="300"
       >
-        <h4 className="mt-4 text-2xl xxl:text-4xl">periodic tables</h4>
-        <p className="w-3/4 mt-2 text-lg font-Helvetica-Neue xxl:w-2/4 xxl:text-xl xxl:text-center">
+        <h4 className="mt-4 text-2xl xxl:text-4xl font-Oswald">periodic tables</h4>
+        <p className="w-3/4 mt-2 text-lg xxl:w-2/4 xxl:text-xl xxl:text-center font-Roboto">
           This is a website that allows users to manage reservations for
           specific dates. It includes features such as form validation, CORS
           website security, and the ability to create,delete,and update
@@ -85,8 +85,8 @@ function ProjectView() {
         data-aos-anchor-placement="center-center"
         data-aos-offset="300"
       >
-        <h4 className="mt-4 text-2xl xxl:text-4xl">The Game Island</h4>
-        <p className="w-3/4 mt-2 text-lg font-Helvetica-Neue xxl:w-2/4 xxl:text-xl xxl:text-center">
+        <h4 className="mt-4 text-2xl xxl:text-4xl font-Oswald">The Game Island</h4>
+        <p className="w-3/4 mt-2 text-lg font-Roboto xxl:w-2/4 xxl:text-xl xxl:text-center">
           A Shopify backend based eccommerce website for a local retailer. This was a passion project to
           demonstrate how a local shop could improve it's website for useability and design. Not only was
           this extremely fun to work on, it provided invaluable knowledge about Shopify's backend API and

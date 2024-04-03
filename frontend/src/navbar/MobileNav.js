@@ -38,11 +38,11 @@ function MobileNav() {
         </div>
       </div>
       <div className="flex justify-center items-center fixed z-10 w-full h-[4rem] backdrop-filter backdrop-blur-sm visible sm:invisible ">
-        <h3 className="pl-3 pr-3 text-3xl text-white bg-black rounded-lg bg-opacity-60 font-helvetica-neue">
+        <h3 className="pl-3 pr-3 text-3xl text-white bg-black rounded-lg bg-opacity-60 font-Oswald">
           Ryan.dev
         </h3>
       </div>
-      <div className="mobilenav--wrap">
+      <div className="mobilenav--wrap font-Roboto">
         <div className="mobilenav backdrop-filter backdrop-blur-sm bg-black bg-opacity-[.97]">
           <ul>
             {/* <li className="ml-6">
@@ -81,7 +81,7 @@ function MobileNav() {
             </li> */}
             <li className="ml-6">
               <button
-                className="text-white font-helvetica-neue noSelect"
+                className="text-white noSelect"
                 onClick={() => {
                   $("#hamburger").toggleClass("active");
                   $(".mobilenav--wrap").toggleClass("show--mobilenav");
@@ -114,7 +114,7 @@ function MobileNav() {
             </li>
             <li className="ml-6">
               <button
-                className="text-white font-helvetica-neue noSelect"
+                className="text-white noSelect"
                 onClick={() => {
                   $("#hamburger").toggleClass("active");
                   $(".mobilenav--wrap").toggleClass("show--mobilenav");
@@ -147,7 +147,7 @@ function MobileNav() {
             </li>
             <li className="ml-6">
               <button
-                className="text-white font-helvtica-neue noSelect"
+                className="text-white noSelect"
                 onClick={() => {
                   $("#hamburger").toggleClass("active");
                   $(".mobilenav--wrap").toggleClass("show--mobilenav");

@@ -5,10 +5,10 @@ function Navbar() {
       data-aos="fade-down"
       data-aos-offset="1000"
     >
-      <h2 className="ml-4 font-mono text-4xl text-white xxl:text-6xl">
+      <h2 className="ml-4 text-4xl text-white font-Oswald xxl:text-6xl">
       Ryan.dev
       </h2>
-      <div className="text-white text-xxl xxl:text-4xl">
+      <div className="text-white text-xxl xxl:text-4xl font-Roboto">
         {/* <button
           className="ml-4 mr-4 noSelect"
           onClick={() => {
