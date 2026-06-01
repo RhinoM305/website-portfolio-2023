@@ -1,26 +1,30 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
   const form = useRef();
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setStatus('sending');
 
     emailjs
-    .sendForm('service_fuzv03p', 'template_3zy1oqo', form.current, {
-      publicKey: '7UhxgVidbk-cqcFbS',
-    })
-    .then(
-      () => {
-        console.log('SUCCESS!');
-      },
-      (error) => {
-        console.log('FAILED...', error.text);
-      },
-      e.target.reset()
-    );
-  }
+      .sendForm('service_fuzv03p', 'template_3zy1oqo', form.current, {
+        publicKey: '7UhxgVidbk-cqcFbS',
+      })
+      .then(
+        () => {
+          console.log('EmailJS: SUCCESS');
+          form.current?.reset();
+          setStatus('success');
+        },
+        (error) => {
+          console.error('EmailJS: FAILED', error);
+          setStatus('error');
+        }
+      );
+  };
   return (
     <>
       <div
@@ -75,16 +79,30 @@ function Contact() {
               required
             ></textarea>
             <button
-              className="rounded-lg w-full h-8 bg-white mt-4 send-button se:w-[20rem] xr:w-[22rem]"
+              className="rounded-lg w-full h-8 bg-white mt-4 send-button se:w-[20rem] xr:w-[22rem] disabled:opacity-60"
               id="submit"
               type="submit"
               value="Send"
+              disabled={status === 'sending'}
             >
               <div className="alt-send-button">
                 <i className="mt-2 text-black bg-white fa fa-paper-plane-o"></i>
-                <span className="mt-2 send-text">SEND</span>
+                <span className="mt-2 send-text">
+                  {status === 'sending' ? 'SENDING...' : 'SEND'}
+                </span>
               </div>
             </button>
+            {status === 'success' && (
+              <p className="mt-3 text-green-400 font-Roboto" role="status">
+                Message sent. Thanks for reaching out!
+              </p>
+            )}
+            {status === 'error' && (
+              <p className="mt-3 text-red-400 font-Roboto" role="alert">
+                Could not send. Check the console, or try again with ad blockers
+                disabled for this site.
+              </p>
+            )}
           </form>
         </div>
         <div
