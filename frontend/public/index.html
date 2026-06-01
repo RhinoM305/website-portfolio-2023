@@ -2,6 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <script>
+      (function () {
+        var isResizeObserverNoise = function (message) {
+          return typeof message === "string" && message.indexOf("ResizeObserver loop") !== -1;
+        };
+        var nativeAddEventListener = window.addEventListener.bind(window);
+        window.addEventListener = function (type, listener, options) {
+          if (type === "error" && typeof listener === "function") {
+            var wrapped = function (event) {
+              if (event && isResizeObserverNoise(event.message)) {
+                return undefined;
+              }
+              return listener.apply(this, arguments);
+            };
+            return nativeAddEventListener(type, wrapped, options);
+          }
+          return nativeAddEventListener(type, listener, options);
+        };
+      })();
+    </script>
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
