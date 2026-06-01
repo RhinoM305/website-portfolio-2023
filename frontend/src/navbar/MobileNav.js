@@ -142,7 +142,7 @@ function MobileNav() {
                   }
                 }}
               >
-                Portfolio
+                Resume
               </button>
             </li>
             <li className="ml-6">

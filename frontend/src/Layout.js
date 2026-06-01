@@ -17,18 +17,19 @@ function Layout() {
       once: true,
     });
   }, []);
+
   return (
     <div className="overflow-hidden overflow-x: hidden;" id="mainDom">
       <MobileNav />
       <Navbar />
       <Landing />
       <div className="w-full">
-        <body className="flex flex-col items-center w-full" id="skills">
+        <main className="flex flex-col items-center w-full" id="skills">
           {/* <About /> */}
           <Skills />
           <Portfolio />
           <Contact />
-        </body>
+        </main>
       </div>
     </div>
   );

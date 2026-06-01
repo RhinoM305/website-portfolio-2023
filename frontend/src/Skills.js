@@ -1,3 +1,88 @@
+function SkillPill({ label, delay }) {
+  return (
+    <p
+      className="px-4 py-1 m-1 rounded-lg bg-stone-700"
+      data-aos="fade-right"
+      data-aos-anchor-placement="center-center"
+      data-aos-delay={delay}
+      data-aos-duration="1000"
+      data-aos-offset="300"
+    >
+      {label}
+    </p>
+  );
+}
+
+function SkillSection({ title, skills, titleDelay = "500", isFirst = false }) {
+  return (
+    <>
+      <h3
+        className={`pl-2 md:pl-[75px] text-5xl font-thin text-white font-Oswald xxl:text-6xl ${
+          isFirst ? "mt-6" : "mt-14"
+        }`}
+        data-aos="fade-right"
+        data-aos-anchor-placement="center-center"
+        data-aos-delay={titleDelay}
+        data-aos-duration="1000"
+        data-aos-offset="350"
+      >
+        {title}
+      </h3>
+      <div className="flex flex-wrap w-full pl-2 md:pl-[75px] mt-8 text-lg text-white md:text-2xl font-Roboto">
+        {skills.map((skill, index) => (
+          <SkillPill key={skill} label={skill} delay={800 + index * 100} />
+        ))}
+      </div>
+    </>
+  );
+}
+
+const frontendSkills = [
+  "TypeScript",
+  "JavaScript",
+  "HTML5",
+  "CSS3",
+  "React",
+  "Next.js",
+  "Redux / RTK",
+  "React Native",
+  "Vue / Nuxt",
+  "Tailwind",
+  "Material UI",
+  "SASS",
+];
+
+const backendSkills = [
+  "Node.js",
+  "Express",
+  "REST",
+  "GraphQL",
+  "PostgreSQL",
+  "MySQL",
+  "MongoDB",
+  "Supabase",
+  "Redis",
+  "Python",
+  "Go",
+];
+
+const toolsSkills = [
+  "LLMs",
+  "RAG",
+  "AWS",
+  "Docker",
+  "Git",
+  "GitHub",
+  "n8n",
+];
+
+const agenticToolsSkills = [
+  "Cursor",
+  "MCP",
+  "Superset",
+  "OpenAI SDK",
+];
+
 function Skills() {
   return (
     <div className="w-full flex flex-col bg-[black] pt-28 pb-24">
@@ -12,240 +97,10 @@ function Skills() {
       >
         Skills
       </h2>
-      <p
-        className="pl-2 md:pl-[75px] mt-6 text-5xl font-thin text-white font-Oswald Neue xxl:text-6xl "
-        data-aos="fade-right"
-        data-aos-anchor-placement="center-center"
-        data-aos-delay="500"
-        data-aos-duration="1000"
-        data-aos-offset="350"
-      >
-        Frontend
-      </p>
-      <div className="flex flex-wrap w-full pl-2 md:pl-[75px] mt-8 text-lg text-white md:text-2xl font-Roboto">
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"          
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="800"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-           >HTML</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"          
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="900"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-           >CSS</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"          
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1000"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-           >Javascript</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"          
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1100"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-           >React</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"          
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1200"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-           >Tailwind</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"          
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1300"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-           >Bootstrap</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"          
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1400"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-           >Jquery</p>
-
-      </div>
-      <h3
-        className="pl-2 md:pl-[75px] text-5xl font-thin text-white font-Oswald mt-14 xxl:text-6xl"
-        data-aos="fade-right"
-        data-aos-anchor-placement="center-center"
-        data-aos-delay="500"
-        data-aos-duration="1000"
-        data-aos-offset="300"
-      >
-        Backend
-      </h3>
-      <div className="flex flex-wrap w-full pl-2 md:pl-[75px] mt-8 text-lg text-white md:text-2xl font-Roboto">
-      <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                  data-aos="fade-right"
-                  data-aos-anchor-placement="center-center"
-                  data-aos-delay="800"
-                  data-aos-duration="1000"
-                  data-aos-offset="300"
-      >
-        Python</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="900"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-                        
-        >
-          Apollo</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1000"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-                        
-        >
-          Express</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1100"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-                        
-        >
-          Knex</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1200"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-                        
-        >
-          Redis</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1300"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-                        
-        >
-          MongoDB</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1400"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-                        
-        >
-          GraphQL</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1500"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-                        
-        >
-          PostgresSQL</p>
-      </div>
-      <h3
-        className="pl-2 md:pl-[75px] text-5xl font-thin text-white font-Oswald mt-14 xxl:text-6xl"
-        data-aos="fade-right"
-        data-aos-anchor-placement="center-center"
-        data-aos-delay="500"
-        data-aos-duration="1000"
-        data-aos-offset="300"
-      >
-        Tools
-      </h3>
-      <div
-        name="tool-icons"
-        className="w-full pl-2 md:pl-[75px]"
-      >
-        <div className="flex flex-wrap w-full mt-8 text-lg text-white md:text-2xl font-Roboto">
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="800"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-        >
-          Visual Studio</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="900"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-        >
-          Git</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1000"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-        >
-          Github</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1100"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-        >
-          Jest</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1200"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-        >
-          Mocha & Chai</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1300"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-        >
-          Puppeteer</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1400"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-        >
-          Postman</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1500"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-        >
-          Npm</p>
-        <p className="px-4 py-1 m-1 rounded-lg bg-stone-700"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-center"
-                    data-aos-delay="1600"
-                    data-aos-duration="1000"
-                    data-aos-offset="300"
-        >
-          DBeaver</p>
-        </div>
-      </div>
+      <SkillSection title="Frontend" skills={frontendSkills} isFirst />
+      <SkillSection title="Backend" skills={backendSkills} />
+      <SkillSection title="Tools" skills={toolsSkills} />
+      <SkillSection title="Agentic Tools" skills={agenticToolsSkills} />
     </div>
   );
 }

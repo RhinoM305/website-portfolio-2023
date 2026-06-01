@@ -31,7 +31,7 @@ function Navbar() {
             window.scrollTo(0, 1650);
           }}
         >
-          Portfolio
+          Resume
         </button>
         <button
           className="ml-4 mr-4 noSelect"

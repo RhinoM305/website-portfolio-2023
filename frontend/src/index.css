@@ -164,4 +164,10 @@ z-index:1
   transform: translate3d(0px, -29px, 0px);
 }
 
+.resume-viewer,
+.resume-viewer > div,
+.resume-viewer .rpv-core__viewer,
+.resume-viewer .rpv-default-layout__container {
+  width: 100%;
+}
 
