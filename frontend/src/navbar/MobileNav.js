@@ -43,8 +43,8 @@ function MobileNav() {
           <img src={rmLogo} alt="RM logo" className="h-9 w-auto" />
         </div>
       </div>
-      <div className="mobilenav--wrap font-mono uppercase tracking-[0.08em] text-eyebrow">
-        <div className="mobilenav backdrop-filter backdrop-blur-sm bg-bg">
+      <div className="mobilenav--wrap font-mono uppercase tracking-[0.08em] text-eyebrow bg-bg">
+        <div className="mobilenav bg-bg">
           <ul>
             {/* <li className="ml-6">
               <button
