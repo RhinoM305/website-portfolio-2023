@@ -200,7 +200,7 @@ z-index:1
   letter-spacing: 0.08em;
 }
 
-.alt-send-button:hover {
+.send-button:hover .alt-send-button {
   transform: translate3d(0px, -29px, 0px);
 }
 

@@ -10,7 +10,7 @@ function Contact() {
     setStatus('sending');
 
     emailjs
-      .sendForm('service_fuzv03p', 'template_3zy1oqo', form.current, {
+      .sendForm('service_vj1k784', 'template_3zy1oqo', form.current, {
         publicKey: '7UhxgVidbk-cqcFbS',
       })
       .then(
