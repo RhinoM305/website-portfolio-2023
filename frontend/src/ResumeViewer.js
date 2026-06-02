@@ -12,7 +12,7 @@ function ResumeViewer() {
   return (
     <div className="resume-viewer w-full px-4 md:px-8 lg:px-16 mt-8 mb-4">
       <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
-        <div className="w-full h-[75vh] min-h-[500px] border border-stone-200 overflow-hidden shadow-lg">
+        <div className="w-full h-[75vh] min-h-[500px] border border-border overflow-hidden shadow-lg rounded-lg">
           <Viewer fileUrl={RESUME_URL} plugins={[defaultLayoutPluginInstance]} />
         </div>
       </Worker>

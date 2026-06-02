@@ -2,24 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Fonts */
+  --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
+  /* Light theme (default) */
+  --bg: #e7e5df;          /* paper */
+  --surface: #e5ecf4;     /* mist */
+  --text: #242038;        /* ink */
+  --text-muted: #797b84;  /* gray */
+  --heading: #082260;     /* navy */
+  --accent: #18008d;      /* indigo */
+  --accent-hover: #082260;/* navy */
+  --border: color-mix(in srgb, #797b84 35%, transparent);
+}
+
+:root[data-theme="dark"] {
+  --bg: #242038;          /* ink */
+  --surface: #1a1730;     /* ink darkened */
+  --text: #e5ecf4;        /* mist */
+  --text-muted: #797b84;  /* gray */
+  --heading: #e7e5df;     /* paper */
+  --accent: #6b4fe8;      /* lightened indigo */
+  --accent-hover: #8470f0;
+  --border: color-mix(in srgb, #797b84 25%, transparent);
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--font-mono);
 }
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+/* Mono accent label — eyebrows, section indices, dates, tech tags */
+.eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  color: var(--text-muted);
 }
 /* mobile menu hamburger button */
 .ham {
@@ -115,21 +152,21 @@ z-index:1
 
 .mobilenav ul li {
   position: relative;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border);
   list-style:none;
-  font-size: 1.6rem
+  font-size: 1.3125rem
 }
 
 .mobilenav ul li a {
   display: block;
   padding: 15px 20px;
   text-decoration: none;
-  color: #333
+  color: var(--text)
 }
 
 .mobilenav ul li a:hover {
-  background: #fff;
-  color: red;
+  background: var(--surface);
+  color: var(--accent);
 }
 
 
@@ -156,8 +193,11 @@ z-index:1
 .send-text {
   display: block;
   margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
-  letter-spacing: 2px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .alt-send-button:hover {

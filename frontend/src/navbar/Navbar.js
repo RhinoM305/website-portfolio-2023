@@ -1,24 +1,16 @@
+import rmLogo from "../images/rmlogo.svg";
+
 function Navbar() {
   return (
     <div
-      className="flex fixed z-10 w-full h-[4rem] bg-[black] backdrop-filter bg-opacity-20 backdrop-blur-lg items-center justify-between invisible p-5 xxl:h-[6rem] sm:visible"
+      className="flex fixed z-30 w-full h-[4rem] bg-bg/80 backdrop-filter backdrop-blur-lg items-center justify-between invisible px-6 border-b border-border xxl:h-[5rem] sm:visible"
       data-aos="fade-down"
       data-aos-offset="1000"
     >
-      <h2 className="ml-4 text-4xl text-white font-Oswald xxl:text-6xl">
-      Ryan.dev
-      </h2>
-      <div className="text-white text-xxl xxl:text-4xl font-Roboto">
-        {/* <button
-          className="ml-4 mr-4 noSelect"
-          onClick={() => {
-            window.scrollTo(0, 1000);
-          }}
-        >
-          About
-        </button> */}
+      <img src={rmLogo} alt="RM logo" className="h-10 w-auto xxl:h-14" />
+      <div className="flex items-center gap-1 font-mono uppercase tracking-[0.08em] text-eyebrow text-text">
         <button
-          className="ml-4 mr-4 noSelect"
+          className="px-3 py-1 transition-colors hover:text-accent noSelect"
           onClick={() => {
             window.scrollTo(0, 900);
           }}
@@ -26,7 +18,7 @@ function Navbar() {
           Skills
         </button>
         <button
-          className="ml-4 mr-4 noSelect"
+          className="px-3 py-1 transition-colors hover:text-accent noSelect"
           onClick={() => {
             window.scrollTo(0, 1650);
           }}
@@ -34,7 +26,7 @@ function Navbar() {
           Resume
         </button>
         <button
-          className="ml-4 mr-4 noSelect"
+          className="px-3 py-1 transition-colors hover:text-accent noSelect"
           onClick={() => {
             window.scrollTo(0, document.body.scrollHeight);
           }}

@@ -1,7 +1,7 @@
 function SkillPill({ label, delay }) {
   return (
-    <p
-      className="px-4 py-1 m-1 rounded-lg bg-stone-700"
+    <span
+      className="px-3 py-1.5 m-1 font-mono uppercase tracking-[0.08em] text-tag rounded-md bg-surface text-text border border-border"
       data-aos="fade-right"
       data-aos-anchor-placement="center-center"
       data-aos-delay={delay}
@@ -9,7 +9,7 @@ function SkillPill({ label, delay }) {
       data-aos-offset="300"
     >
       {label}
-    </p>
+    </span>
   );
 }
 
@@ -17,7 +17,7 @@ function SkillSection({ title, skills, titleDelay = "500", isFirst = false }) {
   return (
     <>
       <h3
-        className={`pl-2 md:pl-[75px] text-5xl font-thin text-white font-Oswald xxl:text-6xl ${
+        className={`pl-2 md:pl-[75px] text-h3 text-heading ${
           isFirst ? "mt-6" : "mt-14"
         }`}
         data-aos="fade-right"
@@ -28,7 +28,7 @@ function SkillSection({ title, skills, titleDelay = "500", isFirst = false }) {
       >
         {title}
       </h3>
-      <div className="flex flex-wrap w-full pl-2 md:pl-[75px] mt-8 text-lg text-white md:text-2xl font-Roboto">
+      <div className="flex flex-wrap w-full pl-2 md:pl-[75px] mt-6">
         {skills.map((skill, index) => (
           <SkillPill key={skill} label={skill} delay={800 + index * 100} />
         ))}
@@ -85,9 +85,10 @@ const agenticToolsSkills = [
 
 function Skills() {
   return (
-    <div className="w-full flex flex-col bg-[black] pt-28 pb-24">
+    <div className="flex flex-col w-full bg-bg pt-28 pb-24">
+      <p className="pl-2 eyebrow text-eyebrow md:pl-[75px]">01 — Stack</p>
       <h2
-        className="w-full mt-10 text-6xl font-bold text-center text-white font-Oswald hide xxl:text-7xl xxl:mb-2"
+        className="w-full pl-2 mt-3 text-h2 text-heading hide md:pl-[75px]"
         data-aos="fade-down"
         data-aos-anchor-placement="center-center"
         data-aos-delay="500"

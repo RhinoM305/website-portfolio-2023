@@ -1,5 +1,6 @@
 import $ from "jquery";
 import "../index.css";
+import rmLogo from "../images/rmlogo.svg";
 
 // bg-opacity-20 backdrop-blur-lg
 
@@ -37,13 +38,13 @@ function MobileNav() {
           </svg>
         </div>
       </div>
-      <div className="flex justify-center items-center fixed z-10 w-full h-[4rem] backdrop-filter backdrop-blur-sm visible sm:invisible ">
-        <h3 className="pl-3 pr-3 text-3xl text-white bg-black rounded-lg bg-opacity-60 font-Oswald">
-          Ryan.dev
-        </h3>
+      <div className="flex justify-center items-center fixed z-10 w-full h-[4rem] bg-bg/80 backdrop-filter backdrop-blur-sm border-b border-border visible sm:invisible ">
+        <div className="flex items-center px-3 py-1">
+          <img src={rmLogo} alt="RM logo" className="h-9 w-auto" />
+        </div>
       </div>
-      <div className="mobilenav--wrap font-Roboto">
-        <div className="mobilenav backdrop-filter backdrop-blur-sm bg-black bg-opacity-[.97]">
+      <div className="mobilenav--wrap font-mono uppercase tracking-[0.08em] text-eyebrow">
+        <div className="mobilenav backdrop-filter backdrop-blur-sm bg-bg">
           <ul>
             {/* <li className="ml-6">
               <button
@@ -81,7 +82,7 @@ function MobileNav() {
             </li> */}
             <li className="ml-6">
               <button
-                className="text-white noSelect"
+                className="text-text noSelect"
                 onClick={() => {
                   $("#hamburger").toggleClass("active");
                   $(".mobilenav--wrap").toggleClass("show--mobilenav");
@@ -114,7 +115,7 @@ function MobileNav() {
             </li>
             <li className="ml-6">
               <button
-                className="text-white noSelect"
+                className="text-text noSelect"
                 onClick={() => {
                   $("#hamburger").toggleClass("active");
                   $(".mobilenav--wrap").toggleClass("show--mobilenav");
@@ -147,7 +148,7 @@ function MobileNav() {
             </li>
             <li className="ml-6">
               <button
-                className="text-white noSelect"
+                className="text-text noSelect"
                 onClick={() => {
                   $("#hamburger").toggleClass("active");
                   $(".mobilenav--wrap").toggleClass("show--mobilenav");

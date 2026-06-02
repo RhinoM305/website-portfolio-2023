@@ -9,7 +9,7 @@ function About() {
     );
   };
   return (
-    <div id="about" className="bg-black">
+    <div id="about" className="bg-bg">
       <div className="flex flex-col items-center se:mb-24 sm:mt-20">
         <h2
           data-aos="fade-down"
@@ -17,7 +17,7 @@ function About() {
           data-aos-delay="500"
           data-aos-duration="1000"
           data-aos-offset="450"
-          className="mt-2 font-sans text-5xl font-bold font-helvetica-neue xxl:text-7xl"
+          className="mt-2 text-h2 text-heading"
         >
           About Me
         </h2>
@@ -29,14 +29,15 @@ function About() {
             data-aos-offset="300"
           >
             <img
+              alt="Hackers (1995) movie poster"
               src={require("./images/Hackers-Movie-Poster.png")}
               className="h-96 transition-transform duration-250 ease-in-out transform scale-90 hover:scale-110 active:top-2 active:shadow-none active:outline-none active:relative xxl:h-[40rem] xxl:mb-4"
               onClick={handleClick}
             />
           </div>
-          <div className="flex content-center w-full font-sans font-helvetica-neue">
+          <div className="flex content-center w-full">
             <p
-              className="self-center m-6 xxl:text-4xl se:text-lg sm:text-2xl"
+              className="self-center m-6 text-lead text-text max-w-prose"
               data-aos="fade-left"
               data-aos-anchor-placement="center-center"
               data-aos-offset="300"
