@@ -27,26 +27,26 @@ function Contact() {
   };
 
   const inputClass =
-    'w-72 p-2 rounded-md bg-surface border border-border text-text placeholder:text-muted focus:outline-none focus:border-accent transition-colors';
+    'w-full p-2 rounded-md bg-surface border border-border text-text placeholder:text-muted focus:outline-none focus:border-accent transition-colors';
   const labelClass =
     'mt-3 mb-1 font-mono uppercase tracking-[0.08em] text-tag text-muted';
 
   return (
     <>
       <div
-        className="flex w-full justify-center items-center bg-bg pt-20 pb-24 se:flex-col sm:flex-row"
+        className="flex flex-col items-center w-full px-6 bg-bg pt-20 pb-24 sm:flex-row sm:items-start sm:justify-center sm:gap-10 sm:px-8"
         id="contact"
       >
         <div
-          className="flex se:flex-col se:w-full se:ml-8 sm:items-center xxl:items-end xxl:pr-4"
+          className="flex flex-col w-full max-w-[35rem] sm:items-center xxl:items-end xxl:pr-4"
           name="form side"
         >
-          <div>
-            <p className="ml-4 eyebrow text-eyebrow">03 — Contact</p>
-            <h2 className="mt-2 ml-4 text-h2 text-heading">Contact</h2>
-            <p className="mt-2 ml-4 text-lead text-muted">Let's talk.</p>
+          <div className="w-full">
+            <p className="eyebrow text-eyebrow">03 — Contact</p>
+            <h2 className="mt-2 text-h2 text-heading">Contact</h2>
+            <p className="mt-2 text-lead text-muted">Let's talk.</p>
           </div>
-          <form ref={form} onSubmit={sendEmail} className="flex flex-col ml-6 mt-4 mb-8 w-[35rem] se:w-[22rem]">
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col w-full mt-4 mb-8">
             <label htmlFor="contactFullName" className={labelClass}>
               Full Name
             </label>
@@ -71,14 +71,14 @@ function Contact() {
               Message
             </label>
             <textarea
-              className="p-2 rounded-md bg-surface border border-border text-text placeholder:text-muted focus:outline-none focus:border-accent transition-colors se:w-[20rem] se:h-[8rem] xr:w-[22rem]"
+              className="w-full h-32 p-2 rounded-md bg-surface border border-border text-text placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
               name="message"
               id="message"
               placeholder="To Write"
               required
             ></textarea>
             <button
-              className="rounded-lg w-full h-8 bg-accent text-bg mt-4 send-button se:w-[20rem] xr:w-[22rem] hover:bg-accent-hover transition-colors disabled:opacity-60"
+              className="rounded-lg w-full h-8 bg-accent text-bg mt-4 send-button hover:bg-accent-hover transition-colors disabled:opacity-60"
               id="submit"
               type="submit"
               value="Send"
@@ -105,34 +105,34 @@ function Contact() {
           </form>
         </div>
         <div
-          className="flex flex-col items-center w-full sm:mt-[6rem] xxl:items-start xxl:ml-[14rem]"
+          className="flex flex-col items-center w-full max-w-[22rem] mt-12 sm:mt-[6rem] xxl:items-start xxl:ml-[8rem]"
           name="info side"
         >
-          <hr className="border-border w-[20rem] se:ml-5 se:mr-2 se:mb-6 se:mt-2 xr:w-[22rem]" />
-          <div name="contact-details">
+          <hr className="w-full border-border" />
+          <div name="contact-details" className="w-full">
             <div
-              className="flex flex-col text-text w-[20rem]"
+              className="flex flex-col w-full text-text"
               name="contact-icon-side"
             >
-              <div className="flex items-center my-8">
-                <div className="flex items-center justify-center w-3/4">
-                  <i className="fa fa-map-marker scale-[2.5] text-accent"></i>
+              <div className="flex items-center my-6">
+                <div className="flex items-center justify-center w-12 mr-5 shrink-0">
+                  <i className="fa fa-map-marker scale-[2] text-accent"></i>
                 </div>
                 <p className="w-full">Miami, FL</p>
               </div>
-              <div className="flex items-center my-8">
-                <div className="flex justify-center w-3/4">
-                  <i className="fa fa-phone scale-[2.5] text-accent"></i>
+              <div className="flex items-center my-6">
+                <div className="flex items-center justify-center w-12 mr-5 shrink-0">
+                  <i className="fa fa-phone scale-[2] text-accent"></i>
                 </div>
 
                 <p className="w-full ">(210) 428-8320</p>
               </div>
-              <div className="flex items-center my-8">
-                <div className="flex justify-center w-3/4">
-                  <i className="fa fa-envelope scale-[2.5] text-accent"></i>
+              <div className="flex items-center my-6">
+                <div className="flex items-center justify-center w-12 mr-5 shrink-0">
+                  <i className="fa fa-envelope scale-[2] text-accent"></i>
                 </div>
                 <a
-                  className="w-full transition-colors duration-200 hover:text-accent"
+                  className="w-full transition-colors duration-200 hover:text-accent break-all"
                   href="mailto:morenoryan33@gmail.com"
                 >
                   morenoryan33@gmail.com
@@ -140,8 +140,8 @@ function Contact() {
               </div>
             </div>
           </div>
-          <hr className="border-border w-[20rem] se:ml-5 se:mr-2 se:my-6 xr:w-[22rem]" />
-          <div name="contact buttons" className="mb-4 flex gap-3">
+          <hr className="w-full my-6 border-border" />
+          <div name="contact buttons" className="flex gap-3 mb-4">
             <a
               href="https://github.com/RhinoM305"
               target="_blank"
