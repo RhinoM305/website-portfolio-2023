@@ -3,10 +3,10 @@ function SkillPill({ label, delay }) {
     <span
       className="px-3 py-1.5 m-1 font-mono uppercase tracking-[0.08em] text-tag rounded-md bg-surface text-text border border-border"
       data-aos="fade-right"
-      data-aos-anchor-placement="center-center"
+      data-aos-anchor-placement="top-bottom"
       data-aos-delay={delay}
       data-aos-duration="1000"
-      data-aos-offset="300"
+      data-aos-offset="0"
     >
       {label}
     </span>
@@ -21,10 +21,10 @@ function SkillSection({ title, skills, titleDelay = "500", isFirst = false }) {
           isFirst ? "mt-6" : "mt-14"
         }`}
         data-aos="fade-right"
-        data-aos-anchor-placement="center-center"
+        data-aos-anchor-placement="top-bottom"
         data-aos-delay={titleDelay}
         data-aos-duration="1000"
-        data-aos-offset="350"
+        data-aos-offset="0"
       >
         {title}
       </h3>
@@ -90,10 +90,10 @@ function Skills() {
       <h2
         className="w-full pl-6 mt-3 text-h2 text-heading hide md:pl-[75px]"
         data-aos="fade-down"
-        data-aos-anchor-placement="center-center"
+        data-aos-anchor-placement="top-bottom"
         data-aos-delay="500"
         data-aos-duration="1000"
-        data-aos-offset="350"
+        data-aos-offset="0"
         id="skills"
       >
         Skills

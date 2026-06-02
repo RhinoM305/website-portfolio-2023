@@ -16,6 +16,15 @@ function Layout() {
       delay: 1200,
       once: true,
     });
+
+    // Web fonts (Geist) can load after AOS measures positions, shifting
+    // section heights and leaving stale scroll triggers. Recalculate once
+    // fonts are ready and after full load.
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(() => Aos.refresh());
+    }
+    window.addEventListener("load", Aos.refresh);
+    return () => window.removeEventListener("load", Aos.refresh);
   }, []);
 
   return (
