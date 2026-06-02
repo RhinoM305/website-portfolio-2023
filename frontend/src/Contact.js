@@ -160,15 +160,6 @@ function Contact() {
             >
               <i className="fa fa-linkedin xxl:scale-[1.5]"></i>
             </a>
-            <a
-              href="mailto:morenoryan33@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Email"
-              className="inline-flex items-center justify-center w-20 py-2 rounded-md bg-surface border border-border text-text transition-all duration-200 hover:text-accent hover:border-accent active:translate-y-0.5 xxl:h-12 xxl:w-28"
-            >
-              <i className="fa fa-envelope xxl:scale-[1.5]"></i>
-            </a>
           </div>
         </div>
       </div>
