@@ -152,7 +152,7 @@ function Contact() {
               <i className="fa fa-github xxl:scale-[1.5]"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/ryan-moreno01/"
+              href="https://www.linkedin.com/in/theryanmorneo/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
