@@ -11,23 +11,9 @@ function About() {
   return (
     <div id="about" className="bg-bg">
       <div className="flex flex-col items-center se:mb-24 sm:mt-20">
-        <h2
-          data-aos="fade-down"
-          data-aos-anchor-placement="center-center"
-          data-aos-delay="500"
-          data-aos-duration="1000"
-          data-aos-offset="450"
-          className="mt-2 text-h2 text-heading"
-        >
-          About Me
-        </h2>
+        <h2 className="mt-2 text-h2 text-heading">About Me</h2>
         <div className="flex mt-8 mb-8 se:flex-col-reverse sm:flex-row">
-          <div
-            className="flex justify-center w-full"
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-center"
-            data-aos-offset="300"
-          >
+          <div className="flex justify-center w-full">
             <img
               alt="Hackers (1995) movie poster"
               src={require("./images/Hackers-Movie-Poster.png")}
@@ -36,12 +22,7 @@ function About() {
             />
           </div>
           <div className="flex content-center w-full">
-            <p
-              className="self-center m-6 text-lead text-text max-w-prose"
-              data-aos="fade-left"
-              data-aos-anchor-placement="center-center"
-              data-aos-offset="300"
-            >
+            <p className="self-center m-6 text-lead text-text max-w-prose">
               My passion for coding was ignited after I was captivated by a
               thrilling crime film called Hackers, released in 1995. It was a
               cinematic masterpiece that not only entertained me but also

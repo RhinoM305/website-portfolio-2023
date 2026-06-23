@@ -30,6 +30,16 @@ module.exports = {
       maxWidth: {
         prose: "68ch",
       },
+      boxShadow: {
+        // Airbnb-style soft elevation
+        card: "0 6px 16px rgba(0, 0, 0, 0.12)",
+        "card-hover": "0 10px 28px rgba(0, 0, 0, 0.16)",
+        nav: "0 1px 12px rgba(0, 0, 0, 0.08)",
+      },
+      borderRadius: {
+        "2xl": "1rem",
+        "3xl": "1.5rem",
+      },
       animation: {
         typing1: "typing 3.5s steps(23) 2s forwards, blink 1.0s 6",
         typing2: "typing 3.5s steps(25) 5.5s forwards, blink 1.0s infinite",
@@ -51,7 +61,7 @@ module.exports = {
     fontFamily: {
       sans: ["var(--font-sans)"],
       mono: ["var(--font-mono)"],
-      // Legacy aliases kept so existing classes inherit the new system
+      // Legacy aliases kept so existing classes inherit the new (Manrope) system
       "helvetica-neue": ["var(--font-sans)"],
       "Titan-One": ["var(--font-sans)"],
       "Oswald": ["var(--font-sans)"],

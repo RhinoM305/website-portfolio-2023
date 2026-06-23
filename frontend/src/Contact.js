@@ -27,26 +27,28 @@ function Contact() {
   };
 
   const inputClass =
-    'w-full p-2 rounded-md bg-surface border border-border text-text placeholder:text-muted focus:outline-none focus:border-accent transition-colors';
+    'w-full px-4 py-3 rounded-xl bg-bg border border-border text-text placeholder:text-muted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all';
   const labelClass =
-    'mt-3 mb-1 font-mono uppercase tracking-[0.08em] text-tag text-muted';
+    'mt-4 mb-1.5 text-body-sm font-semibold text-text';
 
   return (
     <>
       <div
-        className="flex flex-col items-center w-full px-6 bg-bg pt-20 pb-24 sm:flex-row sm:items-start sm:justify-center sm:gap-10 sm:px-8"
+        className="flex flex-col items-center w-full px-6 bg-surface pt-20 pb-24 sm:flex-row sm:items-start sm:justify-center sm:gap-10 sm:px-8"
         id="contact"
       >
         <div
-          className="flex flex-col w-full max-w-[35rem] sm:items-center xxl:items-end xxl:pr-4"
+          className="flex flex-col w-full max-w-[35rem] p-6 sm:p-8 bg-bg border border-border rounded-3xl shadow-card xxl:pr-8"
           name="form side"
         >
           <div className="w-full">
             <p className="eyebrow text-eyebrow">03 — Contact</p>
-            <h2 className="mt-2 text-h2 text-heading">Contact</h2>
-            <p className="mt-2 text-lead text-muted">Let's talk.</p>
+            <h2 className="mt-2 text-h2 text-heading">Let's build something</h2>
+            <p className="mt-2 text-lead text-muted">
+              Have a role or project in mind? Drop me a line.
+            </p>
           </div>
-          <form ref={form} onSubmit={sendEmail} className="flex flex-col w-full mt-4 mb-8">
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col w-full mt-4 mb-2">
             <label htmlFor="contactFullName" className={labelClass}>
               Full Name
             </label>
@@ -71,14 +73,14 @@ function Contact() {
               Message
             </label>
             <textarea
-              className="w-full h-32 p-2 rounded-md bg-surface border border-border text-text placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
+              className="w-full h-32 px-4 py-3 rounded-xl bg-bg border border-border text-text placeholder:text-muted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
               name="message"
               id="message"
-              placeholder="To Write"
+              placeholder="Tell me a bit about it…"
               required
             ></textarea>
             <button
-              className="rounded-lg w-full h-8 bg-accent text-bg mt-4 send-button hover:bg-accent-hover transition-colors disabled:opacity-60"
+              className="rounded-full w-full h-8 bg-accent text-white font-semibold mt-5 shadow-card send-button hover:bg-accent-hover hover:shadow-card-hover transition-all disabled:opacity-60"
               id="submit"
               type="submit"
               value="Send"
@@ -147,7 +149,7 @@ function Contact() {
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
-              className="inline-flex items-center justify-center w-20 py-2 rounded-md bg-surface border border-border text-text transition-all duration-200 hover:text-accent hover:border-accent active:translate-y-0.5 xxl:h-12 xxl:w-28"
+              className="inline-flex items-center justify-center w-20 py-3 rounded-full bg-bg border border-border text-text shadow-sm transition-all duration-200 hover:text-accent hover:border-accent hover:shadow-card active:translate-y-0.5 xxl:h-12 xxl:w-28"
             >
               <i className="fa fa-github xxl:scale-[1.5]"></i>
             </a>
@@ -156,7 +158,7 @@ function Contact() {
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
-              className="inline-flex items-center justify-center w-20 py-2 rounded-md bg-surface border border-border text-text transition-all duration-200 hover:text-accent hover:border-accent active:translate-y-0.5 xxl:h-12 xxl:w-28"
+              className="inline-flex items-center justify-center w-20 py-3 rounded-full bg-bg border border-border text-text shadow-sm transition-all duration-200 hover:text-accent hover:border-accent hover:shadow-card active:translate-y-0.5 xxl:h-12 xxl:w-28"
             >
               <i className="fa fa-linkedin xxl:scale-[1.5]"></i>
             </a>

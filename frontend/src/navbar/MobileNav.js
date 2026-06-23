@@ -1,6 +1,6 @@
 import $ from "jquery";
 import "../index.css";
-import rmLogo from "../images/rmlogo.svg";
+import { ReactComponent as RmLogo } from "../images/rmlogo.svg";
 
 // bg-opacity-20 backdrop-blur-lg
 
@@ -40,10 +40,10 @@ function MobileNav() {
       </div>
       <div className="flex justify-center items-center fixed z-10 w-full h-[4rem] bg-bg/80 backdrop-filter backdrop-blur-sm border-b border-border visible sm:invisible ">
         <div className="flex items-center px-3 py-1">
-          <img src={rmLogo} alt="RM logo" className="h-9 w-auto" />
+          <RmLogo role="img" aria-label="RM logo" className="h-8 w-8" />
         </div>
       </div>
-      <div className="mobilenav--wrap font-mono uppercase tracking-[0.08em] text-eyebrow bg-bg">
+      <div className="mobilenav--wrap font-semibold text-eyebrow bg-bg">
         <div className="mobilenav bg-bg">
           <ul>
             {/* <li className="ml-6">

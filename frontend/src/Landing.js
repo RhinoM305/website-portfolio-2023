@@ -1,34 +1,50 @@
 import "./Landing.css";
 import Typewriter from "./Typewriter";
-import rmLogo from "./images/rmlogo.svg";
+import { ReactComponent as RmLogo } from "./images/rmlogo.svg";
 import { FaArrowDown } from "react-icons/fa";
 
 function Landing() {
   return (
-    <div className="relative flex flex-col justify-center min-h-screen gap-4 py-24 overflow-hidden bg-bg sm:flex-row sm:items-center sm:gap-0 sm:py-0">
-      {/* Code "waterfall" — right quarter of the background, slightly blurred */}
-      <div className="absolute top-0 right-0 z-0 w-1/3 h-full pointer-events-none sm:w-1/4">
-        <span className="absolute top-0 w-full h-[1914px] marquee-item opacity-[0.25] blur-[1px] sm:opacity-[0.45]"></span>
-        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-bg"></div>
+    <div className="relative flex items-center min-h-screen px-6 py-24 overflow-hidden bg-bg sm:px-10 sm:py-0">
+      {/* Soft, warm gradient wash — Airbnb-style airy background */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute -top-32 -right-24 w-[34rem] h-[34rem] rounded-full bg-accent/10 blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-24 w-[30rem] h-[30rem] rounded-full bg-accent/5 blur-3xl"></div>
       </div>
 
-      {/* Logo — left half */}
-      <div className="z-10 flex items-center justify-center w-full px-6 sm:w-1/2">
-        <img
-          src={rmLogo}
-          alt="Ryan Moreno logo"
-          className="w-auto h-auto max-w-[11rem] xr:max-w-[14rem] sm:max-w-[18rem] xxl:max-w-[28rem]"
+      {/* Oversized logo watermark, sitting behind the content */}
+      <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+        <RmLogo
+          role="img"
+          aria-label="Ryan Moreno logo"
+          className="w-[150%] max-w-[80rem] h-auto opacity-[0.07] sm:w-[110%]"
         />
       </div>
 
       {/* Intro text */}
-      <div className="z-10 flex flex-col items-start flex-1 px-6">
-        <p className="mb-4 eyebrow text-eyebrow">Software Engineer — Full Stack</p>
+      <div className="relative z-10 flex flex-col items-start w-full max-w-3xl mx-auto">
+        <span className="inline-flex items-center px-3 py-1 mb-5 text-eyebrow font-semibold text-accent bg-accent/10 rounded-full">
+          Software Engineer · Full Stack
+        </span>
         <Typewriter />
         <p className="mt-6 text-base text-muted max-w-prose sm:text-lead">
           I build fast, accessible web applications end to end — from polished
           React interfaces to the APIs and infrastructure behind them.
         </p>
+        <div className="flex flex-wrap items-center gap-3 mt-8">
+          <button
+            className="px-6 py-3 rounded-full bg-accent text-white font-semibold shadow-card transition-all hover:bg-accent-hover hover:shadow-card-hover active:translate-y-px"
+            onClick={() => window.scrollTo(0, document.body.scrollHeight)}
+          >
+            Get in touch
+          </button>
+          <button
+            className="px-6 py-3 rounded-full bg-bg text-text font-semibold border border-border transition-all hover:border-text hover:shadow-card active:translate-y-px"
+            onClick={() => window.scrollTo(0, 1650)}
+          >
+            View resume
+          </button>
+        </div>
       </div>
 
       <div className="absolute bottom-0 z-10 flex items-end justify-center w-full pb-8">

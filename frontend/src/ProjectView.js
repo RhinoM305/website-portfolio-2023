@@ -2,13 +2,7 @@ function ProjectView() {
   return (
     <div className="flex mb-8 se:flex-col">
       <div className="md:flex">
-      <div
-        name="picture-side"
-        className="w-full sm:block"
-        data-aos="fade-right"
-        data-aos-anchor-placement="center-center"
-        data-aos-offset="300"
-      >
+      <div name="picture-side" className="w-full sm:block">
         <img
           src={require("./images/Reservation-SS-.png")}
           className="w-full h-full scale-75"
@@ -17,9 +11,6 @@ function ProjectView() {
       <div
         name="desc-side"
         className="flex flex-col items-center justify-center w-full"
-        data-aos="fade-left"
-        data-aos-anchor-placement="center-center"
-        data-aos-offset="300"
       >
         <h4 className="mt-4 text-2xl xxl:text-4xl font-Oswald">periodic tables</h4>
         <p className="w-3/4 mt-2 text-lg xxl:w-2/4 xxl:text-xl xxl:text-center font-Roboto">
@@ -66,13 +57,7 @@ function ProjectView() {
       </div>
       </div>
       <div className="md:flex md:flex-row-reverse">
-      <div
-        name="picture-side"
-        className="w-full sm:block"
-        data-aos="fade-left"
-        data-aos-anchor-placement="center-center"
-        data-aos-offset="300"
-      >
+      <div name="picture-side" className="w-full sm:block">
         <img
           src={require("./images/Project-Retro-SS.png")}
           className="w-full h-full scale-75"
@@ -81,9 +66,6 @@ function ProjectView() {
       <div
         name="desc-side"
         className="flex flex-col items-center justify-center w-full"
-        data-aos="fade-right"
-        data-aos-anchor-placement="center-center"
-        data-aos-offset="300"
       >
         <h4 className="mt-4 text-2xl xxl:text-4xl font-Oswald">The Game Island</h4>
         <p className="w-3/4 mt-2 text-lg font-Roboto xxl:w-2/4 xxl:text-xl xxl:text-center">
