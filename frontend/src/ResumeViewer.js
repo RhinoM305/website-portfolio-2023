@@ -1,4 +1,37 @@
 import { FaMapMarkerAlt, FaGraduationCap } from "react-icons/fa";
+import {
+  SiTypescript,
+  SiReact,
+  SiNodedotjs,
+  SiSupabase,
+  SiRedis,
+  SiShopify,
+  SiCapacitor,
+  SiRedux,
+  SiOpenai,
+  SiGithub,
+} from "react-icons/si";
+import { LuBrainCircuit, LuWorkflow } from "react-icons/lu";
+import { TbApi } from "react-icons/tb";
+
+const stackIcons = {
+  TypeScript: SiTypescript,
+  "React / Next.js": SiReact,
+  React: SiReact,
+  "Node.js": SiNodedotjs,
+  Supabase: SiSupabase,
+  "Supabase (pgvector)": SiSupabase,
+  Redis: SiRedis,
+  "Shopify GraphQL API": SiShopify,
+  Capacitor: SiCapacitor,
+  "Plaid API": TbApi,
+  "Redux Toolkit (RTK)": SiRedux,
+  "OpenAI SDK": SiOpenai,
+  "GitHub API": SiGithub,
+  n8n: LuWorkflow,
+  LLMs: LuBrainCircuit,
+  "LLMs / RAG": LuBrainCircuit,
+};
 
 const experiences = [
   {
@@ -99,8 +132,10 @@ const education = [
 ];
 
 function StackChip({ label }) {
+  const Icon = stackIcons[label];
   return (
-    <span className="px-3 py-1 text-tag font-semibold rounded-full bg-surface text-muted">
+    <span className="inline-flex items-center gap-1.5 px-3 py-1 text-tag font-semibold rounded-full bg-surface text-muted">
+      {Icon && <Icon className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />}
       {label}
     </span>
   );
